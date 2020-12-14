@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<!--
+		Ruca and Lucy Website 
+		Author: Patti Langenecker
+		Date: 12/13/2020
+		
+		Filename: 		contact.htm
+		Supporting files: modernizr.custom.40753, formResult.html, ruca-and-lucy-grey-banner-800.png, main.css
+	-->
+	
+		<meta charset="UTF-8" />
+		<title>Contact Us</title>
+		<link href="assets/styles/main.css" rel="stylesheet" type="text/css"  />
+	</head>
+	
+	<body>
+		<header>
+		<br />
+			<img src="assets/images/ruca-and-lucy-grey-banner-800.png" class="head" alt="Ruca and Lucy foster with pawprint" />
+		</header>
+		
+		<nav class="horizontal">
+			<ul>
+				<li><a href="index.htm">Home</a></li>
+				<li><a href="about.htm">About</a></li>
+				<li><a href="puppies.htm">Foster Puppies</a></li>
+				<li><a href="resources.htm">Resources</a></li>
+				<li><a href="contact.htm">Contact Us</a></li>
+			</ul>
+		</nav>
+		
+		<section id="main">
+		<h1>Contact Us</h1>
+		<p>Let us know if you have questions about an adoptable puppy in our home. We are also happy to answer any questions about fostering and volunteering with an organization.</p>
+		<br />
+		<form action="formResult.html">
+			<fieldset class="contactinfo">
+					<legend>Tell us about yourself:</legend>
+						<label for="fnameinput">
+							First Name
+							<input type="text" id="fnameinput" name="fname" required="required">
+						</label>
+						<label for="lnameinput">
+							Last Name
+							<input type="text" id="lnameinput" name="lname" required="required">
+						</label>
+						<label for="phoneinput">
+							Phone
+							<input type="tel" id="phoneinput" name="phone" placeholder="(###) ###-####" 
+							pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$">
+						</label>
+						<label for="emailinput">
+							Email
+							<input type="email" id="emailinput" name="email" placeholder="Example@gmail.com" 
+							required="required">
+						</label>
+			</fieldset>
+			<br/>
+			<fieldset class="additionalinfo">
+					<legend>Ask us anything!  </legend>
+						<label for="feedback">
+							
+							<textarea id="feedback" name="feedback" rows="7">
+							</textarea>
+						</label>
+			</fieldset>
+			<br/>
+			<fieldset class="newsletter">
+					<legend>Would you like to subscribe to our newsletter? Follow us on <a href="https://www.instagram.com/rucaandlucyfoster/" target="_blank">Instagram</a> for more pictures and follow up stories!</legend>
+						<label for="yes">
+							<input type="checkbox" id="yes" value="newsletter">
+							Count me in!
+						</label>
+			</fieldset>
+			<fieldset class="submitbutton">
+					<input type="submit" id="submit" value="Submit">
+					<input value="Reset" type="reset">
+			</fieldset>
+		</form>
+		
+	</section>
+		
+		  <footer>
+			<address>
+				Ruca & Lucy Foster &#183;
+				PO Box 123 &#183;
+				St. Louis, MO 63118 &#183;
+				636-290-1234 &#183;
+			</address>
+		</footer>
+		</body>
+		
+	</html>
