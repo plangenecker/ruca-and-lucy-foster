@@ -1,0 +1,283 @@
+/* 
+	Ruca & Lucy Foster Style Sheet
+	
+	Author: Patti Langenecker
+	Date: 12/13/2020
+	Filename  main.css
+	
+*/
+
+/* Display HTML5 structural elements as blocks */
+article, aside, figure, figcaption, footer, hgroup, header, nav, object, section, table  {
+	display: block;
+}
+
+/* Set the default page element styles */
+
+*{
+  font-family: corbel;
+}
+
+aside {
+	display: block;
+	width: 500px;
+	float: right;
+	background-color: white;
+	border: 1.5px solid black;
+	padding: 10px;
+	margin: 5px 0px 20px 20px;
+}
+
+aside img {
+	margin: 10px;
+	border: 1px solid black;
+}
+
+aside {
+	height: 300px;
+	overflow: auto;
+}
+
+/*Audio Styles*/
+audio, object, embed{
+	display: block;
+	margin: 15px auto;
+}
+
+table {
+	font-size: 14px;
+	border-collapse: collapse;
+	border: 10px outset rgb(42, 43, 42);
+	margin: 10px auto;
+	width: 750px;
+}
+
+thead {
+	background-color: rgb(237, 237, 237);
+}
+
+th, td {
+	border: 1px solid black;
+	vertical-align: top;
+	padding: 5px;
+}
+
+tr td:nth-of-type(2), tr td:nth-of-type(3) {
+	text-align: left;
+}
+
+table, th, td {
+	text-align: left;
+	padding: 10px;
+	
+}
+
+/*Img styles*/
+img.head {
+	border: 1.5px solid rgb(42, 43, 42);
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	height: auto;
+}
+img.PgImg {
+	clear: right;
+	float: right;
+	margin: 0px;
+	border: 1px solid rgb(42, 43, 42);
+}
+img.PgImg1 {
+	clear: left;
+	float: left;
+	margin: 0px;
+	border: 2px solid rgb(42, 43, 42);
+}
+
+.feeColumns {
+	background-color: white;
+}
+
+figure {
+   width: 100%;
+   float: right;
+   text-align: center;
+   background-color: ivory;
+   color: rgb(42, 43, 42);
+}
+figcaption {
+   padding: 0.4em;
+}
+
+article ul {
+   padding-left: 8%;
+   font-weight: bold;
+   cursor: pointer;
+}
+article li {
+   margin-top: 1em;
+}
+
+article {
+   text-align: left;
+   background-color: white;
+   overflow: auto;
+}
+
+body {
+	margin: 0px auto;
+	width: 800px;
+	font-family: corbel;
+}
+
+@font-face {
+  font-family: corbel;
+  font-weight: bold;
+}
+
+/* Navigation links */
+nav ul {
+	list-style: none;
+	margin-top: 5px;
+}
+
+nav li {
+	float: left;
+	width: 19%;
+	text-align: center;
+	border: 1px solid rgb(42, 43, 42);
+	margin: 5px 2px 15px 2px;
+}
+
+/* Navigation links */
+nav ul {
+	list-style: none;
+	margin-top: 5px;
+}
+
+nav li {
+	float: left;
+	width: 19%;
+	text-align: center;
+	border: 1px solid rgb(42, 43, 42);
+	margin: 5px 2px 15px 2px;
+}
+
+nav li a {
+	display: block;
+	color: rgb(42, 43, 42);
+	text-decoration: none;
+	background-color: white;
+}
+
+nav li a:hover {
+	color: white;
+	background-color: rgb(42, 43, 42);
+}
+
+/* h1, h2, P */
+h1 {
+	font-size: 20px;
+	font-weight: normal;
+	letter-spacing: 5px;
+	color: rgb(42, 43, 42);
+	margin-top: 15px;
+}
+
+h2 {
+	font-size: 16px;
+	font-weight: normal;
+	letter-spacing: 5px;
+	color: rgb(42, 43, 42);
+	margin-top: 15px;
+}
+
+p {
+	margin: 7px;
+}
+
+/*Field styles*/
+input, textarea{
+	border: 1px solid rgb(42, 43, 42);
+	padding: 0.2em;
+	font-size: 1em;
+	
+}
+fieldset {
+	border: none;
+	padding: 2%;
+	margin-bottom: 0.8em;
+	
+}
+legend {
+	font-size: 20px;
+	margin: 5px;
+	font-family: corbel;
+	color: rgb(42, 43, 42);
+}
+#fnameinput, #lnameinput, #emailinput, #phoneinput {
+	width: 20em;
+}
+#feedback {
+	width: 99%;
+	display: block;
+	
+}
+#main ul {
+	list-style-type: square;
+	margin-left: 30px;
+	font-family: corbel;
+	font-size: 14px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+#main ul li {
+	margin-bottom: 14px;
+	font-family: B612;
+}
+
+#main ul li strong {
+	font-weight: normal;
+	color: white;
+}
+
+/*Label styles*/
+.contactinfo label {
+	display: block;
+	font-family: corbel;
+	position: relative;
+	margin: 1em 0;
+}
+.contactinfo input {
+	position: absolute;
+	left: 6em;
+}
+.submitbutton{
+	border: none;
+	font-family: B612;
+	text-align: center;
+	
+}
+
+/* footer */
+footer {
+	border-top: 2px solid rgb(42, 43, 42);
+	clear: both;
+	font-family: corbel;
+	float: left;
+	width: 100%;
+}
+
+address {
+	font-style: normal;
+	font-size: 10px;
+	text-align: center;
+	padding: 5px;
+}
+
+
+
+
+
+
