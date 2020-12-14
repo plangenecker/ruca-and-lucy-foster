@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--
+      Ruca and Lucy Foster Website
+      
+
+      Author: Patti Langenecker - Group 7
+      Date: 12/13/2020
+
+       Filename: formResult.html
+	   Supporting files: modernizr.custom.40753, ruca-and-lucy-grey-banner-800.png, main.css, clstyles.css
+    -->
+    <meta charset="utf-8">
+    <title>Contact Us Data</title>
+    <link href="Assets/Styles/main.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <header>
+			<br />
+			<img src="assets/images/ruca-and-lucy-grey-banner-800.png" class="head" alt="Ruca and Lucy foster with pawprint" />
+		</header>
+   <nav class="horizontal">
+			<ul>
+				<li><a href="index.htm">Home</a></li>
+				<li><a href="about.htm">About</a></li>
+				<li><a href="puppies.htm">Foster Puppies</a></li>
+				<li><a href="resources.htm">Resources</a></li>
+				<li><a href="contact.htm">Contact Us</a></li>
+			</ul>
+		</nav>
+      <section id="main">
+        <h1>Thank you for reaching out, we will be in touch with you shortly!</h1>
+        <p>Your form has been submitted with the following data:</p>
+
+                 <script>
+                   var formData = location.search;
+                   formData = formData.substring(1, formData.length);
+                   while (formData.indexOf("+") !== -1) {
+                      formData = formData.replace("+", " ");
+                   }
+                   formData = decodeURIComponent(formData);
+                   var formArray = formData.split("&");
+                   for (var i = 0; i < formArray.length; i = i + 1) {
+                      document.write("<p>" + formArray[i] + "</p>");
+                   }
+               </script>
+        <br/>
+		<p>In the meantime, follow us on <a href="https://www.instagram.com/rucaandlucyfoster/" target="_blank">Instagram</a> for adorable pictures and follow up stories!</p>
+		<br/>
+      </section>
+      <footer>
+			<address>
+				Ruca & Lucy Foster &#183;
+				PO Box 123 &#183;
+				St. Louis, MO 63118 &#183;
+				636-290-1234 &#183;
+			</address>
+		</footer>
+  </body>
+</html>
